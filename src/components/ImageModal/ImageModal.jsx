@@ -39,6 +39,8 @@ export function ImageModal({ isOpen, isClose, image }) {
         className={css.modalImage}
         src={image.urls.regular}
         alt={image.alt_description}
+        width={400}
+        height={600}
       />
 
       <div className={css.imageInfo}>
