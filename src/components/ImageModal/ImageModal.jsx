@@ -45,8 +45,8 @@ export function ImageModal({ isOpen, isClose, image }) {
 
       <div className={css.imageInfo}>
         <span>Likes: {image.likes}</span>
-        <span>Views: {image.views}</span>
-        {image.location.name && <span>Location: {image.location.name}</span>}
+        {image.views > 0 && <span>Views: {image.views}</span>}
+        {image.location?.name && <span>Location: {image.location.name}</span>}
       </div>
     </Modal>
   );
